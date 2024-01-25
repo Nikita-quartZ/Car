@@ -1,0 +1,152 @@
+.intro {
+  padding-top: 59px;
+}
+
+.intro__header {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  color: #636363;
+  margin-bottom: 12px;
+}
+
+.intro__paragraph {
+  color: #959595;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 59px;
+}
+
+.intro__btn {
+  font-family: 'Inter', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  padding: 22px 56px;
+  margin-bottom: 59px;
+}
+
+.intro__btn-block {
+  display: flex;
+  justify-content: center;
+}
+
+.table__header {
+  background: #F8F9FA;
+  border-top: 1px solid #707071;
+  border-bottom: 1px solid #707071;
+}
+
+.table__header-item {
+  text-align: center;
+}
+.table__header-item:last-of-type {
+  text-align: left;
+}
+
+.table__header th {
+  border-top: 1px solid #707071;
+  border-bottom: 1px solid #707071;
+}
+
+.table__row:not(:first-of-type) td {
+  border-top: 1px solid #959595;
+}
+.table__row:last-of-type td {
+  border-bottom: 1px solid #959595;
+}
+
+.table__table {
+  margin-bottom: 33px;
+}
+
+table.foobar td {
+  border: solid black 1px;
+}
+
+.table__table td, .table__table th {
+  font-family: 'HeliosCond';
+}
+
+.table__review {
+  text-decoration: underline;
+}
+
+.table__success-percent {
+  color: #16A34A;
+}
+.table__error-percent {
+  color: #DC2626;
+}
+
+.table__info {
+  color: #959595;
+  font-family: 'Inter', sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.table__number, .table__company, .table__review, .table__success-percent, .table__error-percent {
+  text-align: center;
+}
+
+.table__paragraph {
+  color: #959595;
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 33px;
+}
+
+.comments {
+  margin-bottom: 59px;
+}
+
+.comments__header {
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.comments__card {
+  border-top: 1px solid #9E9D24;
+  padding: 12px 0;
+  font-size: 24px;
+}
+.comments__card:last-child {
+  border-bottom: 1px solid #9E9D24;
+}
+
+.comments__user-info-block {
+  display: flex;
+  align-items: center;
+}
+
+.comments__text {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.comments__car {
+  color: #9E9D24;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.comments__name {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-right: 10px;
+}
+.comments__city {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.comments__time {
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+}

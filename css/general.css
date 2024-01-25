@@ -1,4 +1,202 @@
+@font-face {
+  font-family: 'HeliosCond';
+  src: url('../fonts/HeliosCond-Bold.eot');
+  src: local('HeliosCond Bold'), local('HeliosCond-Bold'),
+      url('../fonts/../fonts/HeliosCond-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/../fonts/HeliosCond-Bold.woff') format('woff'),
+      url('../fonts/../fonts/HeliosCond-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HeliosCond';
+  src: url('../fonts/HeliosCond-Bold-Italic.eot');
+  src: local('HeliosCond Bold Italic'), local('HeliosCond-Bold-Italic'),
+      url('../fonts/HeliosCond-Bold-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/HeliosCond-Bold-Italic.woff') format('woff'),
+      url('../fonts/HeliosCond-Bold-Italic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HeliosCond';
+  src: url('../fonts/HeliosCond-Italic.eot');
+  src: local('HeliosCond Italic'), local('HeliosCond-Italic'),
+      url('../fonts/HeliosCond-Italic.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/HeliosCond-Italic.woff') format('woff'),
+      url('../fonts/HeliosCond-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'HeliosCond';
+  src: url('../fonts/HeliosCond.eot');
+  src: local('HeliosCond Regular'), local('HeliosCond'),
+      url('../fonts/HeliosCond.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/HeliosCond.woff') format('woff'),
+      url('../fonts/HeliosCond.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'HeliosCond';
+  font-size: 16px;
+  color: #636363;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+}
+
 .control {
-  max-width: 1336px;
+  max-width: 1366px;
+  width: 100%;
   margin: 0 auto;
+  padding: 0 15px;
 } 
+
+.header {
+  border: 1px solid #707071;
+  background: #F8F9FA;
+  padding: 40px 0;
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+}
+
+.header__logo-block {
+  background: #D9D9D9;
+  width: 90px;
+  height: 90px;
+  margin-right: 33px;
+}
+
+.header__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header__nav-list-item:not(:last-child) {
+  margin-right: 33px;
+}
+
+.first-link {
+  max-width: 195px;
+}
+
+.header__nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.header__nav-list-link {
+  display: flex;
+  align-items: center;
+  color: #636363;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header__nav-list-text {
+  font-size: 20px;
+}
+
+.btn-yellow {
+  color: yellow;
+  font-family: 'Inter', sans-serif;;
+  background-color: #9E9D24;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.header__btn {
+  /* display: block; */
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 14px;
+}
+
+.chip__number {
+  width: 26px;
+  height: 26px;
+  font-size: 20px;
+  font-family: 'HeliosCond';
+  background-color: #9E9D24;
+  border-radius: 50%;
+  line-height: 26px;
+  text-align: center;
+  color: white;
+}
+
+.footer {
+  background-color: #636363;
+}
+.footer-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 78px;
+  padding-bottom: 72px;
+}
+
+.footer__logo-block {
+  background: #D9D9D9;
+  width: 206px;
+  height: 206px;
+  margin-right: 33px;
+}
+
+.footer__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.footer__contacts-text {
+  color: #fff;
+  font-size: 24px;
+}
+
+.footer__policy {
+  max-width: 585px;
+}
+
+.footer__policy-header {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
