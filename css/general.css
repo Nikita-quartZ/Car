@@ -140,6 +140,9 @@ ul {
   padding: 10px;
   border: none;
   border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header__btn {
@@ -226,6 +229,7 @@ ul {
 
 .main {
   position: relative;
+  min-height: calc(100vh - 90px - 400px);
 }
 
 .header__content.control {
@@ -255,6 +259,97 @@ ul {
   z-index: 100;
   display: none;
 }
+
+.blur {
+  padding-top: 35px;
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 200;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0;
+}
+
+.modal__header-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 16px 0 74px;
+}
+
+.modal__content {
+  padding: 33px 74px 74px 74px;
+}
+
+.modal__input {
+  border-radius: 13px;
+  border: 1px solid #636363;
+  background: #F8F9FA;
+  height: 74px;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  padding-top: 3px;
+  padding-left: 24px;
+  margin-bottom: 33px;
+}
+
+.modal__input::placeholder {
+  font-size: 20px;
+}
+
+.modal__btn svg {
+  margin-right: 8px;
+}
+
+.modal__btn {
+  border-radius: 10px;
+}
+
+.modal__paragraph {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 33px;
+}
+
+.divider {
+  width: 100%;
+  border-bottom: 1px solid #9E9D24;
+}
+
+.modal__btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 13px;
+}
+
+.grey-btn {
+  border: none;
+  background-color: #636363;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__header {
+  font-size: 24px;
+}
+
+.modal__close {
+  cursor: pointer;
+  background: none;
+  border: none;
+  margin-bottom: 5px;
+}
+
 
 @media (max-width: 1100px) {
   .header__menu {

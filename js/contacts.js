@@ -9,10 +9,6 @@ document.getElementById('application-btn').addEventListener('click', () => {
   document.getElementById('modal').classList.add('d-block')
 })
 
-document.getElementById('help-btn').addEventListener('click', () => {
-  document.getElementById('modal').classList.add('d-block')
-})
-
 document.getElementById('close-modal-btn').addEventListener('click', () => {
   document.getElementById('modal').classList.remove('d-block')
 })
