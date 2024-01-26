@@ -276,6 +276,7 @@ ul {
   background-color: #fff;
   border-radius: 20px;
   padding: 0;
+  position: relative;
 }
 
 .modal__header-block {
@@ -337,6 +338,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: 'Inter', sans-serif;
 }
 
 .modal__header {
@@ -428,5 +430,50 @@ ul {
 
   .footer__policy {
     padding-top: 20px;
+  }
+
+  .modal__header {
+    font-weight: 400;
+  }
+
+  .modal__content {
+    padding-top: 10px;
+  }
+
+  .modal__input {
+    margin-bottom: 20px;
+    padding-right: 16px;
+    font-size: 14px;
+    height: 44px;
+  }
+
+  .modal__paragraph {
+    margin-bottom: 10px;
+    font-size: 24px;
+  }
+
+  .modal__header-block {
+    padding: 15px 30px 10px 15px;
+  }
+
+  .modal__content {
+    padding: 10px 15px 15px 15px;
+  }
+
+  .modal__close svg {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 9px;
+    right: 5px;
+  }
+
+  .modal__btn {
+    font-size: 14px;
+  }
+
+  .modal__btn svg {
+    width: 20px;
+    height: 20px;
   }
 }

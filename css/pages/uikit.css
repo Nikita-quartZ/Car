@@ -1,0 +1,223 @@
+.lists__block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 59px;
+}
+
+.lists {
+  padding-top: 59px;
+}
+
+.pictures {
+  margin: 0 auto;
+  max-width: 1310px;
+  padding: 0 15px;
+  padding-top: 80px;
+}
+
+.pictures__picture {
+  width: 100%;
+  margin-bottom: 59px;
+}
+
+.pictures__parahraph {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
+
+.lists__markers li:not(:last-child), .lists__markers-number li:not(:last-child), .lists__markers-lighting li:not(:last-child){
+  margin-bottom: 10px;
+}
+
+.lists__markers .lists__markers-cross-item {
+  display: flex;
+  align-items: center;
+}
+
+.lists__markers-number .lists__markers-cross-item {
+  display: flex;
+  align-items: center;
+}
+
+.lists__markers-lighting .lists__markers-cross-item {
+  display: flex;
+  align-items: center;
+}
+
+.lists__markers .lists__markers-cross-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.lists__markers-number .lists__markers-cross-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.lists__markers-lighting .lists__markers-cross-text {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: 'HeliosCond';
+}
+
+.lists__markers li svg {
+  min-width: 20px;
+  height: 20px;
+}
+
+.lists__markers-lighting li svg {
+  min-width: 38px;
+  height: 38px;
+  margin-right: 0;
+}
+
+.lists__markers-bold {
+  font-weight: 600;
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+}
+
+.lists__markers-cross {
+  margin-bottom: 59px;
+  list-style-position:inside;
+}
+
+.lists__markers-cross-item {
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: start;
+}
+
+.lists__markers-cross-item svg {
+  margin-right: 13px;
+  min-width: 41px;
+}
+
+.lists__markers-cross-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.lists__markers-cross-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.review__header {
+  font-family: 'Inter', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.review {
+  margin-bottom: 80px;
+}
+
+.lists__markers-cross-text {
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.lists__markers-cross-item-number {
+  height: 26px;
+  min-width: 26px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  background-color: #9E9D24;
+  text-align: center;
+  line-height: 26px;
+  font-weight: 400;
+  margin-right: 12px;
+}
+
+@media (max-width: 1100px) {
+  .lists__block {
+    display: block;
+  }
+
+
+  .lists__markers-number-item {
+    font-size: 16px;
+  }
+
+  .lists__markers-number {
+    margin-bottom: 20px;
+  }
+
+  .lists__markers-lighting-item {
+    font-size: 16px;
+  }
+
+  .lists__block {
+    margin-bottom: 20px;
+  }
+
+  .pictures {
+    padding-top: 20px;
+  }
+
+  .lists__markers-lighting {
+    margin-bottom: 20px;
+  }
+
+  .pictures__parahraph {
+    font-size: 16px;
+    margin-bottom: 33px;
+  }
+
+  .review__header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .lists__markers-cross-item, .lists__markers-cross-text, .lists__markers-bold {
+    font-size: 16px;
+  }
+
+  .lists__markers-cross-item svg {
+    width: 15px;
+    min-width: 15px;
+    height: 18px;
+  }
+
+  .lists__markers-cross {
+    margin-bottom: 33px;
+  }
+
+  .review {
+    margin-bottom: 59px;
+  }
+
+  .lists__markers .lists__markers-cross-text, .lists__markers-number .lists__markers-cross-text, .lists__markers-lighting .lists__markers-cross-text {
+    font-size: 16px;
+  }
+
+  .lists__markers, .lists__markers-number, .lists__markers-lighting {
+    margin-bottom: 20px;
+  }
+
+  .lists__markers li svg {
+    min-width: 15px;
+    height: 15px;
+  }
+
+  .lists__markers-cross-item-number {
+    min-width: 17px;
+    width: 17px;
+    height: 17px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .lists__markers-lighting li svg {
+    min-width: 20px;
+    height: 20px;
+    margin-right: 9px;
+  }
+}
