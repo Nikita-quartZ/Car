@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+  <script src="js/main.js" defer></script>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css"/>
   <link rel="stylesheet" href="css/general.css">
   <link rel="stylesheet" href="css/pages/main.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,12 +16,23 @@
 <body>
   <header class="header">
     <div class="control header__content">
+      <button id="menu-btn" class="header__menu">
+        <svg class="header__menu-open" xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M33.7399 20.5C33.7399 19.7924 33.1663 19.2188 32.4587 19.2188H8.54199C7.83438 19.2188 7.26074 19.7924 7.26074 20.5C7.26074 21.2076 7.83438 21.7813 8.54199 21.7813H32.4587C33.1663 21.7813 33.7399 21.2076 33.7399 20.5Z" fill="#636363"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M33.7399 11.9583C33.7399 11.2507 33.1663 10.6771 32.4587 10.6771H8.54199C7.83438 10.6771 7.26074 11.2507 7.26074 11.9583C7.26074 12.666 7.83438 13.2396 8.54199 13.2396H32.4587C33.1663 13.2396 33.7399 12.666 33.7399 11.9583Z" fill="#636363"/>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M33.7399 29.0417C33.7399 28.3341 33.1663 27.7604 32.4587 27.7604H8.54199C7.83438 27.7604 7.26074 28.3341 7.26074 29.0417C7.26074 29.7493 7.83438 30.3229 8.54199 30.3229H32.4587C33.1663 30.3229 33.7399 29.7493 33.7399 29.0417Z" fill="#636363"/>
+        </svg>
+        <svg class="header__menu-close" xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+          <path d="M14.4593 26.5399L26.5391 14.4601" stroke="#636363" stroke-width="3.1875" stroke-linecap="round"/>
+          <path d="M14.4593 14.4601L26.5391 26.5399" stroke="#636363" stroke-width="3.1875" stroke-linecap="round"/>
+        </svg>
+      </button>
       <a href="#">
         <div href="#" class="header__logo-block">
           <img class="header__logo" src="" alt="logo">
         </div>
       </a>
-      <nav>
+      <nav id="menu-content" class="header__nav">
         <ul class="header__nav-list">
           <li class="header__nav-list-item">
             <a href="" class="header__nav-list-link">
@@ -57,7 +71,8 @@
       </div>
     </div>
   </header>
-  <main>
+  <main class="main">
+    <div id="menu-blur" class="menu-blur"></div>
     <section class="control intro">
       <h1 class="visuallyhidden">
         Японские машины с доставкой по всей России
@@ -75,7 +90,133 @@
       </div>
     </section>
     <section class="table">
-      <table class="table__table control" cellspacing="0" cellpadding="0">
+      <div data-simplebar>
+        <div class="table__fake-table">
+          <div class="table__fake-header">
+            <div class="control">
+              <div class="table__header-item">#</div>
+              <div class="table__header-item">Название компании</div>
+              <div class="table__header-item">Обзор</div>
+              <div class="table__header-item table__active-filter">За</div>
+              <div class="table__header-item">Против</div>
+              <div class="table__header-item">Подробнее</div>
+            </div>
+          </div>
+          <div class="table__fake-body">
+            <div class="control">
+              <div class="table__body-item">
+                <div class="chip__number-block">
+                  <p class="chip__number">
+                    1
+                  </p>
+                </div>
+              </div>
+              <div class="table__body-item">
+                HFM
+              </div>
+              <div class="table__body-item table__review">
+                <a href="#">
+                  Обзор
+                </a>
+              </div>
+              <div class="table__body-item table__success-percent">
+                96%
+              </div>
+              <div class="table__body-item table__error-percent">
+                4%
+              </div>
+              <div class="table__body-item table__body-item-info table__info">
+                Рейтинг Форекс брокеров не несет ответственности за любые ошибки в информации, торговых условиях и форекс обзорах. Для получения самой свежей информации, пожалуйста, посетите сайт компании. Рейтинг Форекс оценивает участников по фактическому количеству голосов. Результаты ежемесячного рейтинга можно посмотреть в нашем разделе статистики.
+              </div>
+            </div>
+          </div>
+          <div class="table__fake-body">
+            <div class="control">
+              <div class="table__body-item">
+                <div class="chip__number-block">
+                  <p class="chip__number">
+                    2
+                  </p>
+                </div>
+              </div>
+              <div class="table__body-item">
+                HFM
+              </div>
+              <div class="table__body-item table__review">
+                <a href="#">
+                  Обзор
+                </a>
+              </div>
+              <div class="table__body-item table__success-percent">
+                96%
+              </div>
+              <div class="table__body-item table__error-percent">
+                4%
+              </div>
+              <div class="table__body-item table__body-item-info table__info">
+                Рейтинг Форекс брокеров не несет ответственности за любые ошибки в информации, торговых условиях и форекс обзорах. Для получения самой свежей информации, пожалуйста, посетите сайт компании. Рейтинг Форекс оценивает участников по фактическому количеству голосов. Результаты ежемесячного рейтинга можно посмотреть в нашем разделе статистики.
+              </div>
+            </div>
+          </div>
+          <div class="table__fake-body">
+            <div class="control">
+              <div class="table__body-item">
+                <div class="chip__number-block">
+                  <p class="chip__number">
+                    3
+                  </p>
+                </div>
+              </div>
+              <div class="table__body-item">
+                HFM
+              </div>
+              <div class="table__body-item table__review">
+                <a href="#">
+                  Обзор
+                </a>
+              </div>
+              <div class="table__body-item table__success-percent">
+                96%
+              </div>
+              <div class="table__body-item table__error-percent">
+                4%
+              </div>
+              <div class="table__body-item table__body-item-info table__info">
+                Рейтинг Форекс брокеров не несет ответственности за любые ошибки в информации, торговых условиях и форекс обзорах. Для получения самой свежей информации, пожалуйста, посетите сайт компании. Рейтинг Форекс оценивает участников по фактическому количеству голосов. Результаты ежемесячного рейтинга можно посмотреть в нашем разделе статистики.
+              </div>
+            </div>
+          </div>
+          <div class="table__fake-body">
+            <div class="control">
+              <div class="table__body-item">
+                <div class="chip__number-block">
+                  <p class="chip__number">
+                    4
+                  </p>
+                </div>
+              </div>
+              <div class="table__body-item">
+                HFM
+              </div>
+              <div class="table__body-item table__review">
+                <a href="#">
+                  Обзор
+                </a>
+              </div>
+              <div class="table__body-item table__success-percent">
+                96%
+              </div>
+              <div class="table__body-item table__error-percent">
+                4%
+              </div>
+              <div class="table__body-item table__body-item-info table__info">
+                Рейтинг Форекс брокеров не несет ответственности за любые ошибки в информации, торговых условиях и форекс обзорах. Для получения самой свежей информации, пожалуйста, посетите сайт компании. Рейтинг Форекс оценивает участников по фактическому количеству голосов. Результаты ежемесячного рейтинга можно посмотреть в нашем разделе статистики.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <table class="table__table control" cellspacing="0" cellpadding="0">
         <thead>
           <tr class="table__header">
             <th class="table__header-item">#</th>
@@ -89,8 +230,10 @@
         <tbody>
           <tr class="table__row">
             <td class="table__number">
-              <div class="chip__number">
-                1
+              <div class="chip__number-block">
+                <p class="chip__number">
+                  1
+                </p>
               </div>
             </td>
             <td class="table__company">
@@ -111,8 +254,10 @@
           </tr>
           <tr class="table__row">
             <td class="table__number">
-              <div class="chip__number">
-                2
+              <div class="chip__number-block">
+                <p class="chip__number">
+                  2
+                </p>
               </div>
             </td>
             <td class="table__company">
@@ -133,8 +278,10 @@
           </tr>
           <tr class="table__row">
             <td class="table__number">
-              <div class="chip__number">
-                3
+              <div class="chip__number-block">
+                <p class="chip__number">
+                  3
+                </p>
               </div>
             </td>
             <td class="table__company">
@@ -155,8 +302,10 @@
           </tr>
           <tr class="table__row">
             <td class="table__number">
-              <div class="chip__number">
-                4
+              <div class="chip__number-block">
+                <p class="chip__number">
+                  4
+                </p>
               </div>
             </td>
             <td class="table__company">
@@ -176,11 +325,10 @@
             </td>
           </tr>
         </tbody>
-      </table>
+      </table> -->
       <div class="control">
         <p class="table__paragraph">
-          * Рейтинг Форекс брокеров не несет ответственности за любые ошибки в информации, торговых условиях и форекс обзорах. Для получения самой свежей информации, пожалуйста, посетите сайт компании. Рейтинг Форекс оценивает участников по фактическому количеству голосов. Результаты ежемесячного рейтинга можно посмотреть в нашем разделе статистики. Подробный анализ ежемесячных победителей регулярно публикуется в нашем разделе Форекс брокеры. Мы также предоставляем возможность сравнить компании. Если вы хотите сравнить несколько брокерских компаний или проанализировать торговые условия, пожалуйста, воспользуйтесь нашим бесплатным инструментом сравнения и исследования, который наглядно покажет вам основные преимущества лучших форекс-брокеров. Независимо от того, ищете ли вы квалифицированного ECN или ПАММ брокера для инвестирования или управления своими средствами, наша интерактивная платформа составит список 10 лучших доступных брокеров.
-        </p>
+          * Рейтинг Форекс брокеров не несет ответственности за любые ошибки в информации, торговых условиях и форекс обзорах. Для получения самой свежей информации, пожалуйста, посетите сайт компании. Рейтинг Форекс оценивает участников по фактическому количеству голосов. Результаты ежемесячного рейтинга можно посмотреть в нашем разделе статистики. Подробный анализ ежемесячных победителей регулярно публикуется в нашем разделе Форекс брокеры. Мы также предоставляем возможность сравнить компании. Если вы хотите сравнить несколько брокерских компаний или проанализировать торговые условия, пожалуйста, воспользуйтесь нашим бесплатным инструментом сравнения и исследования, который наглядно покажет вам основные преимущества лучших форекс-брокеров. Независимо от того, ищете ли вы квалифицированного ECN или ПАММ брокера для инвестирования или управления своими средствами, наша интерактивная платформа составит список 10 лучших доступных брокеров.        </p>
       </div>
     </section>
     <section class="comments control">
@@ -193,18 +341,22 @@
             Мое решение сделать выбор в пользу Swissquote было в первую очередь продиктовано моим стремлением найти надежного и авторитетного брокера. Я тщательно изучил онлайн-обзоры и провел тщательное исследование, чтобы убедиться, что я доверяю свои инвестиции надежной компании. Однако мой первоначальный опыт пополнения счета вызвал у меня некоторое недоумение и разочарование. Swissquote подвергла меня сложному процессу, засыпав меня градом из 150 вопросов и запросов документов. Эта процедура регистрации была далеко не простой. Более того, мое знакомство с Swissquote выявило определенные недостатки, которые заслуживают внимания. Примечательно, что структура комиссионных брокера отличается особенно высокими комиссиями, которые могут существенно повлиять на качество обслуживания....
           </p>
           <div class="comments__user-info-block">
-            <p class="comments__car">
-              Toyota
-            </p>
-            <p class="comments__name">
-              Александра Г.
-            </p>
-            <p class="comments__city">
-              г. Санкт-Петербург
-            </p>
-            <p class="comments__time">
-              15 января 2024 г.
-            </p>
+            <div class="d-flex">
+              <p class="comments__car">
+                Toyota
+              </p>
+              <p class="comments__name">
+                Александра Г.
+              </p>
+            </div>
+            <div class="d-flex">
+              <p class="comments__city">
+                г. Санкт-Петербург
+              </p>
+              <p class="comments__time">
+                15 января 2024 г.
+              </p>
+            </div>
           </div>
         </div>
         <div class="comments__card">
@@ -212,18 +364,22 @@
             Мое решение сделать выбор в пользу Swissquote было в первую очередь продиктовано моим стремлением найти надежного и авторитетного брокера. Я тщательно изучил онлайн-обзоры и провел тщательное исследование, чтобы убедиться, что я доверяю свои инвестиции надежной компании. Однако мой первоначальный опыт пополнения счета вызвал у меня некоторое недоумение и разочарование. Swissquote подвергла меня сложному процессу, засыпав меня градом из 150 вопросов и запросов документов. Эта процедура регистрации была далеко не простой. Более того, мое знакомство с Swissquote выявило определенные недостатки, которые заслуживают внимания. Примечательно, что структура комиссионных брокера отличается особенно высокими комиссиями, которые могут существенно повлиять на качество обслуживания....
           </p>
           <div class="comments__user-info-block">
-            <p class="comments__car">
-              Toyota
-            </p>
-            <p class="comments__name">
-              Александра Г.
-            </p>
-            <p class="comments__city">
-              г. Санкт-Петербург
-            </p>
-            <p class="comments__time">
-              15 января 2024 г.
-            </p>
+            <div class="d-flex">
+              <p class="comments__car">
+                Toyota
+              </p>
+              <p class="comments__name">
+                Александра Г.
+              </p>
+            </div>
+            <div class="d-flex">
+              <p class="comments__city">
+                г. Санкт-Петербург
+              </p>
+              <p class="comments__time">
+                15 января 2024 г.
+              </p>
+            </div>
           </div>
         </div>
         <div class="comments__card">
@@ -231,18 +387,22 @@
             Мое решение сделать выбор в пользу Swissquote было в первую очередь продиктовано моим стремлением найти надежного и авторитетного брокера. Я тщательно изучил онлайн-обзоры и провел тщательное исследование, чтобы убедиться, что я доверяю свои инвестиции надежной компании. Однако мой первоначальный опыт пополнения счета вызвал у меня некоторое недоумение и разочарование. Swissquote подвергла меня сложному процессу, засыпав меня градом из 150 вопросов и запросов документов. Эта процедура регистрации была далеко не простой. Более того, мое знакомство с Swissquote выявило определенные недостатки, которые заслуживают внимания. Примечательно, что структура комиссионных брокера отличается особенно высокими комиссиями, которые могут существенно повлиять на качество обслуживания....
           </p>
           <div class="comments__user-info-block">
-            <p class="comments__car">
-              Toyota
-            </p>
-            <p class="comments__name">
-              Александра Г.
-            </p>
-            <p class="comments__city">
-              г. Санкт-Петербург
-            </p>
-            <p class="comments__time">
-              15 января 2024 г.
-            </p>
+            <div class="d-flex">
+              <p class="comments__car">
+                Toyota
+              </p>
+              <p class="comments__name">
+                Александра Г.
+              </p>
+            </div>
+            <div class="d-flex">
+              <p class="comments__city">
+                г. Санкт-Петербург
+              </p>
+              <p class="comments__time">
+                15 января 2024 г.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -251,16 +411,18 @@
 
   <footer class="footer">
     <div class="footer-block control">
-      <div href="#" class="footer__logo-block">
-        <img class="footer__logo" src="" alt="logo">
-      </div>
-      <div class="footer__contacts">
-        <p class="footer__contacts-text">
-          dostavka-avto@info.ru
-        </p>
-        <p class="footer__contacts-text">
-          +7 (903) 55-00-88
-        </p>
+      <div class="d-flex">
+        <div href="#" class="footer__logo-block">
+          <img class="footer__logo" src="" alt="logo">
+        </div>
+        <div class="footer__contacts">
+          <p class="footer__contacts-text">
+            dostavka-avto@info.ru
+          </p>
+          <p class="footer__contacts-text">
+            +7 (903) 55-00-88
+          </p>
+        </div>
       </div>
       <div class="footer__policy">
         <p class="footer__policy-header">

@@ -133,7 +133,7 @@ ul {
 }
 
 .btn-yellow {
-  color: yellow;
+  cursor: pointer;
   font-family: 'Inter', sans-serif;;
   background-color: #9E9D24;
   color: #fff;
@@ -177,7 +177,7 @@ ul {
   background: #D9D9D9;
   width: 206px;
   height: 206px;
-  margin-right: 33px;
+  margin-right: 150px;
 }
 
 .footer__logo {
@@ -199,4 +199,139 @@ ul {
   color: #fff;
   margin-bottom: 15px;
   font-size: 24px;
+}
+
+.header__menu {
+  display: none;
+  background: none;
+  border: none;
+  height: 41px;
+}
+
+.simplebar-scrollbar::before {
+  height: 4px !important;
+}
+.d-none {
+  display: none !important;
+}
+
+.d-block {
+  display: block !important;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+.main {
+  position: relative;
+}
+
+.header__content.control {
+  padding: 0;
+  padding-right: 5px;
+}
+
+.header__menu-close {
+  display: none;
+}
+
+.btn-active .header__menu-open{
+  display: none;
+}
+
+.btn-active .header__menu-close{
+  display: block;
+}
+
+.menu-blur {
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  display: none;
+}
+
+@media (max-width: 1100px) {
+  .header__menu {
+    display: block;
+  }
+
+  .header__nav {
+    display: none;
+    position: absolute;
+    top: 101%;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 101;
+    padding-top: 48px;
+    padding-left: 13px;
+  }
+
+  .header__nav-list-text {
+    font-family: 'Inter', sans-serif;;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  .header__nav-list-link svg {
+    transform: rotate(-90deg);
+  }
+
+  .header__nav-list-item:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 33px;
+  }
+
+  .header__nav-list {
+    display: block;
+  }
+
+  .header__logo-block {
+    width: 25px;
+    height: 25px;
+  }
+  .header {
+    padding: 0;
+    border: 0.275px solid #707071;
+    position: relative;
+  }
+
+  .header__btn {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .footer__logo-block {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footer__logo-block {
+    margin-right: 12px;
+  }
+
+  .footer-block {
+    flex-direction: column;
+    align-items: start;
+    padding-left: max(30px, (100vw - 320px) / 2);
+    padding-right: max(30px, (100vw - 320px) / 2);
+  }
+
+  .footer__contacts-text {
+    font-size: 16px;
+  }
+
+  .footer__policy-header {
+    font-size: 16px;
+  }
+
+  .footer__policy {
+    padding-top: 20px;
+  }
 }

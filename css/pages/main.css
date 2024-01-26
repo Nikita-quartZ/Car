@@ -39,9 +39,38 @@
 
 .table__header-item {
   text-align: center;
+  font-size: 20px;
+  font-weight: 400;
+  padding: 23px 0;
 }
+
+.table__header-item:not(:first-of-type) {
+  cursor: pointer;
+}
+
 .table__header-item:last-of-type {
   text-align: left;
+}
+
+.table__header-item:nth-child(1), .table__body-item:nth-child(1) {
+  min-width: 69px;
+  max-width: 69px;
+}
+
+.table__header-item:nth-child(2), .table__body-item:nth-child(2) {
+  min-width: 188px;
+  text-align: left;
+}
+.table__header-item:nth-child(3), .table__body-item:nth-child(3) {
+  min-width: 85px;
+}
+
+.table__header-item:nth-child(4), .table__body-item:nth-child(4) {
+  min-width: 85px;
+}
+
+.table__header-item:nth-child(5), .table__body-item:nth-child(5) {
+  min-width: 105px;
 }
 
 .table__header th {
@@ -84,13 +113,66 @@ table.foobar td {
   font-family: 'Inter', sans-serif;
   font-size: 10px;
   font-weight: 400;
+  padding: 11px 0;
 }
 
-.table__number, .table__company, .table__review, .table__success-percent, .table__error-percent {
+.table__number {
+  height: 100%;
+  display: table-cell;
+  margin: 0 auto;
+}
+
+.chip__number-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.table__number, .table__review, .table__success-percent, .table__error-percent {
   text-align: center;
 }
 
+.table__fake-table {
+  margin-bottom: 12px;
+  min-width: 1000px;
+}
+
+.table__fake-header {
+  border-top: 1px solid #707071;
+  border-bottom: 1px solid #707071;
+  background-color: #F8F9FA;
+}
+
+.table__body-item-info {
+  padding: 11px 0;
+}
+
+.table__fake-header .control {
+  display: flex;
+  align-items: center;
+}
+
+.table__header-item {
+  min-width: 69px;
+}
+
+.table__body-item {
+  min-width: 69px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.table__fake-body {
+  border-bottom: 1px solid #959595;
+}
+
+.table__fake-body .control {
+  display: flex;
+  align-items: center;
+}
+
 .table__paragraph {
+  padding-top: 21px;
   color: #959595;
   font-family: 'Inter', sans-serif;
   font-size: 16px;
@@ -123,6 +205,10 @@ table.foobar td {
   align-items: center;
 }
 
+.comments {
+  margin-bottom: 33px;
+}
+
 .comments__text {
   font-size: 24px;
   margin-bottom: 12px;
@@ -134,6 +220,7 @@ table.foobar td {
   font-size: 20px;
   font-weight: 700;
   margin-right: 10px;
+  text-decoration: underline;
 }
 .comments__name {
   font-family: 'Inter', sans-serif;
@@ -149,4 +236,57 @@ table.foobar td {
 .comments__time {
   font-family: 'Inter', sans-serif;
   font-size: 20px;
+}
+
+.table__active-filter {
+  background-color: #9E9D24;
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .intro {
+    padding-top: 33px;
+  }
+
+  .intro__header {
+    font-size: 24px;
+  }
+
+  .intro__paragraph {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .intro__btn {
+    padding: 14px;
+    margin-bottom: 20px;
+  }
+
+  .comments__header {
+    font-size: 24px;
+  }
+
+  .comments__text {
+    font-size: 16px;
+  }
+
+  .comments__user-info-block {
+    display: block;
+  }
+
+  .comments__car {
+    font-size: 14px;
+  }
+
+  .comments__name {
+    font-size: 14px;
+  }
+
+  .comments__city {
+    font-size: 14px;
+  }
+
+  .comments__time {
+    font-size: 12px;
+  }
 }
