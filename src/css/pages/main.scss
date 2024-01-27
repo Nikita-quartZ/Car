@@ -241,6 +241,11 @@ table.foobar td {
 .table__active-filter {
   background-color: #9E9D24;
   color: #fff;
+  transition: background .15s linear;
+}
+
+.table__active-filter:hover {
+  background-color: #686818;
 }
 
 @media (max-width: 1100px) {

@@ -57,6 +57,10 @@ ul {
   list-style-type: none;
 }
 
+body {
+  position: relative;
+}
+
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -98,7 +102,6 @@ ul {
   background: #D9D9D9;
   width: 90px;
   height: 90px;
-  margin-right: 33px;
 }
 
 .header__logo {
@@ -126,15 +129,41 @@ ul {
   color: #636363;
   text-decoration: none;
   font-size: 20px;
+  transition: color .15s linear;
+}
+
+.header__nav-list-link {
+  display: flex;
+  align-items: center;
+  color: #636363;
+  text-decoration: none;
+  font-size: 200px;
+}
+
+.header__nav-list-link:hover .header__nav-list-text{
+  color: #a7a7a7;
+}
+
+.header__nav-list-link path {
+  transition: fill .15s linear;
+}
+
+.header__logo-link {
+  margin-right: 33px;
+}
+
+.header__nav-list-link:hover path {
+  fill: #a7a7a7;
 }
 
 .header__nav-list-text {
   font-size: 20px;
+  transition: color .15s linear;
 }
 
 .btn-yellow {
   cursor: pointer;
-  font-family: 'Inter', sans-serif;;
+  font-family: 'Inter', sans-serif;
   background-color: #9E9D24;
   color: #fff;
   padding: 10px;
@@ -143,6 +172,11 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background .15s linear;
+}
+
+.btn-yellow:hover {
+  background-color: #686818;
 }
 
 .header__btn {
@@ -332,6 +366,7 @@ ul {
 }
 
 .grey-btn {
+  cursor: pointer;
   border: none;
   background-color: #636363;
   color: #fff;
@@ -339,6 +374,11 @@ ul {
   align-items: center;
   justify-content: center;
   font-family: 'Inter', sans-serif;
+  transition: background .15s linear;
+}
+
+.grey-btn:hover {
+  background-color: #3f3f3f;
 }
 
 .modal__header {
