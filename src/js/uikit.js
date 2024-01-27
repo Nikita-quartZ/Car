@@ -12,3 +12,8 @@ document.getElementById('application-btn').addEventListener('click', () => {
 document.getElementById('close-modal-btn').addEventListener('click', () => {
   document.getElementById('modal').classList.remove('d-block')
 })
+
+document.getElementById('modal').addEventListener('click', (e) => {
+  e.stopPropagation();
+  if (e.target.classList.contains('blur')) document.getElementById('modal').classList.remove('d-block')
+})
