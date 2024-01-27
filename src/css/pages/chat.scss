@@ -86,10 +86,23 @@
   align-items: center;
   color: #9E9D24;
   cursor: pointer;
+  transition: color .15s linear;
+}
+
+.chat__card-btn:hover {
+  color: #77771b;
 }
 
 .chat__card-btn svg {
   margin-right: 12px;
+}
+
+.chat__card-btn path {
+  transition: fill .15s linear;
+}
+
+.chat__card-btn:hover path {
+  fill: #77771b;
 }
 
 .form__container {
