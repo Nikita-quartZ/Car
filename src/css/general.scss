@@ -53,6 +53,10 @@
   color: #636363;
 }
 
+textarea {
+  resize: none;
+}
+
 ul {
   list-style-type: none;
 }
@@ -458,6 +462,7 @@ body {
     align-items: start;
     padding-left: max(30px, (100vw - 320px) / 2);
     padding-right: max(30px, (100vw - 320px) / 2);
+    padding-top: 20px;
   }
 
   .footer__contacts-text {
