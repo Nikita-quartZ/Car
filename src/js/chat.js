@@ -4,6 +4,9 @@ document.getElementById('menu-btn').addEventListener('click', () => {
   document.getElementById('menu-blur').classList.toggle('d-block')
 })
 
+document.getElementById('btn-dropdown-list').addEventListener('click', () => {
+  document.getElementById('dropdown-list').classList.toggle('d-block')
+})
 
 document.getElementById('application-btn').addEventListener('click', () => {
   document.getElementById('modal').classList.add('d-block')
