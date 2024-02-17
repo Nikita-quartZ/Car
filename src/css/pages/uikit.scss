@@ -30,34 +30,101 @@
   margin-bottom: 10px;
 }
 
-.lists__markers .lists__markers-cross-item {
+.lists__markers li {
   display: flex;
   align-items: center;
 }
 
-.lists__markers-number .lists__markers-cross-item {
+.lists__markers-number ol {
+  padding-left: 31px;
+}
+
+.lists__markers-number li {
+  display: flex;
+  align-items: center;
+  position: relative;	
+	margin: 0 0 0 0;
+	padding: 0 0 10px 0;
+	line-height: 1.4;
+  margin-bottom: 7px !important;
+}
+
+.lists__markers-number li:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: 11px;
+	left: -32px;
+	width: 26px;
+	height: 26px;
+	background: #9E9D24;
+  border-radius: 999px;
+	color: #fff;
+	text-align: center;
+	line-height: 26px;
+	font-size: 17px;
+}
+
+.lists__markers-lighting li {
   display: flex;
   align-items: center;
 }
 
-.lists__markers-lighting .lists__markers-cross-item {
+.lists__markers li, .lists__markers-number li, .lists__markers-lighting li {
+  font-size: 24px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
   display: flex;
-  align-items: center;
+  align-items: start;
 }
 
-.lists__markers .lists__markers-cross-text {
+.lists__markers-cross li::before {
+  content: '';
+  background-image: url('../../images/marker.svg');
+  width: 20px;
+  height: 36px;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  left: 0;
+  top: 0;
+  margin-right: 12px;
+}
+.lists__markers-lighting li::before {
+  content: '';
+  background-image: url('../../images/marker-lightning.svg');
+  width: 41px;
+  height: 41px;
+  background-repeat: no-repeat;
+  background-size: 41px;
+  left: 0;
+  top: 0;
+  margin-right: 0px;
+}
+
+// .lists__markers-cross-item svg {
+//   margin-right: 13px;
+//   min-width: 41px;
+// }
+
+.lists__markers li:not(:last-child), .lists__markers-number li:not(:last-child), .lists__markers-lighting li:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.lists__markers li {
   font-family: 'Inter', sans-serif;
   font-size: 32px;
   font-weight: 500;
 }
 
-.lists__markers-number .lists__markers-cross-text {
+.lists__markers-number li {
   font-family: 'Inter', sans-serif;
   font-size: 36px;
   font-weight: 400;
 }
 
-.lists__markers-lighting .lists__markers-cross-text {
+.lists__markers-lighting li {
   font-size: 36px;
   font-weight: 400;
   font-family: 'HeliosCond';
@@ -85,26 +152,7 @@
   list-style-position:inside;
 }
 
-.lists__markers-cross-item {
-  font-size: 24px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  display: flex;
-  align-items: start;
-}
 
-.lists__markers-cross-item svg {
-  margin-right: 13px;
-  min-width: 41px;
-}
-
-.lists__markers-cross-item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.lists__markers-cross-item:not(:last-child) {
-  margin-bottom: 20px;
-}
 
 .review__header {
   font-family: 'Inter', sans-serif;
@@ -123,31 +171,74 @@
   font-weight: 400;
 }
 
-.lists__markers-cross-item-number {
-  height: 26px;
-  min-width: 26px;
-  border-radius: 50%;
-  font-size: 20px;
-  color: #fff;
-  background-color: #9E9D24;
-  text-align: center;
-  line-height: 26px;
-  font-weight: 400;
-  margin-right: 12px;
-}
+// .lists__markers-cross-item-number {
+//   height: 26px;
+//   min-width: 26px;
+//   border-radius: 50%;
+//   font-size: 20px;
+//   color: #fff;
+//   background-color: #9E9D24;
+//   text-align: center;
+//   line-height: 26px;
+//   font-weight: 400;
+//   margin-right: 12px;
+// }
 
 @media (max-width: 1100px) {
   .lists__block {
     display: block;
   }
 
-
-  .lists__markers-number-item {
-    font-size: 16px;
+  .lists {
+    padding-top: 33px;
   }
 
-  .lists__markers-number {
-    margin-bottom: 20px;
+  .lists__markers-cross li::before {
+    content: '';
+    background-image: url('../../images/marker.svg');
+    width: 15px;
+    height: 19px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+    background-position: center;
+    left: 0;
+    top: 0;
+    margin-right: 7px;
+  }
+
+  .lists__markers-lighting li::before {
+    content: '';
+    background-image: url('../../images/marker-lightning.svg');
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    margin-right: 4px;
+  }
+
+  .lists__markers-number li:before {
+    content: counter(num); 
+    counter-increment: num;
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    left: -24px;
+    width: 17px;
+    height: 17px;
+    background: #9E9D24;
+    border-radius: 999px;
+    color: #fff;
+    text-align: center;
+    line-height: 17px;
+    font-size: 12px;
+  }
+  
+  .lists__markers-number ol {
+    padding-left: 23px;
+  }
+
+  .lists__markers li, .lists__markers-number li, .lists__markers-lighting li {
+    font-size: 16px;
   }
 
   .lists__markers-lighting-item {
